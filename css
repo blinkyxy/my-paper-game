@@ -1,0 +1,81 @@
+
+.test{ 
+  font-size: 100px;  
+  text-align: center;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px;
+  background-color: var(--main-bg-color);
+  font-family: Arial, sans-serif;
+}
+:root {
+  --main-bg-color: #1fbd9a;
+  --header-font-size: 20px;
+  --paragraph-font-size: 24px;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: var(--main-bg-color);
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+.image-container {
+  width: 100%; /* Adjusts to the content size */
+  max-width: 100%; /* Ensures it doesn't overflow the viewport */
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Optional: adds space between images */
+  margin-bottom: 12px;
+  text-align: center;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+.image-container img {
+  width: 100%;
+  height: auto;
+  max-height: 220px;
+  object-fit: contain;
+  display: block;
+  border: 1px solid black;
+}
+.middle-image {
+  width: min(80vw, 420px);
+  max-width: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 0;
+  margin-bottom: 10px;
+}
+.middle-image img {
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  object-fit: contain;
+  display: block;
+  border: 1px solid black;
+}
+.commentary {
+  font-size: 20px;
+  text-align: center;
+  white-space: normal; /* Allows text to wrap */
+}
+.commentary-container {
+  width: 80%; /* Adjust as needed */
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
