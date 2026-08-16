@@ -168,7 +168,7 @@ else if(piecesCount === 8192) {
 }
 else if(piecesCount === 16384) {
     gameImage.middleSlotblyatt.src = "./assets/stanley parable joke.png";
-    document.getElementById('commentary').textContent = "You have 16384 pieces of paper. Big shoutout to my role model, the stanley parable narator... You're still going? Oh well. (Ahem) When stanley had the option to cut the piece of paper in more, he did it because he had NOTT-hing better to do but to annoy me. Then he found the bucket and realised this game is kinda stupid";
+    document.getElementById('commentary').textContent = "You have 16384 pieces of paper. (Ahem) When stanley had the option to cut the piece of paper in more, he did it because he had NOTT-hing better to do but to annoy me. Then he realised this game is kinda stupid";
 }
 else if(piecesCount === 32768) {   
     gameImage.middleSlotblyatt.src = "./assets/paper in ear.png";
