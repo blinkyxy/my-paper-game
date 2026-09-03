@@ -49,6 +49,7 @@ CutButton.addEventListener("click", ()=>{
                 piecesCount= piecesCount * 2;
                 moves = 0; // Reset moves for the next visual challenge
                 clearTimeout(waitTimeOut); // Clear the timeout to prevent the visual cue from disappearing again
+                clearTimeout(VanishTimeOut)
                 document.getElementById("piecesCount").textContent = `Pieces Count: ${piecesCount}`;
                 RandomEvent();
                 document.getElementById("currentChallenge").textContent = `Current Challenge: ${currentChallenge}`;
