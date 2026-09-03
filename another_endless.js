@@ -15,6 +15,7 @@ let holdTime=null;
 let holdSuccess=false;
 let Playing=false;
 let moves = 0;
+let VanishTimeOut= null;
 
 Challenge = {
     AUDIO: "audio",
@@ -116,9 +117,9 @@ function runEvent() {
         VisualCue.style.display = 'block';
         moves = Math.floor(Math.random() * 5) + 5; // Random number of moves between 5 and 10
         randomPosition();
-        waitTimeOut = setTimeout(() => {
+        VanishTimeOut = setTimeout(() => {
             VisualCue.style.display = 'none';
-        }, Math.random() * 2000 + 500); // Visual cue is displayed for a random time between 2 and 5 seconds
+        }, (Math.random() * 2 + 0.5)*1000); // Visual cue is displayed for a random time between 2 and 5 seconds
 } , Math.random() * 2000 + 500); // Wait for a random time between 1 and 3 seconds before showing the visual cue
     }
 
