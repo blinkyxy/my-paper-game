@@ -182,6 +182,13 @@ else if(piecesCount === 131072) {
     document.getElementById('pieces').style.display='none';
     gameImage.middleSlotblyatt.src = "./assets/smug.png";
     document.getElementById('commentary').textContent = "You don't know how many you have, do you? >:}";
+    let playerAnswer=prompt("How many pieces of paper do you have? (type the number)");
+    if(playerAnswer==piecesCount){
+        document.getElementById('commentary').textContent = "Wow, you actually know how many pieces of paper you have. I am impressed.";
+    }
+    else{
+        document.getElementById('commentary').textContent = "You have " + piecesCount + " pieces of paper. Try again next time.";
+    }
 }
 else if(131072 <= piecesCount && piecesCount <= 1000000) {
     gameImage.middleSlotblyatt.src = "./assets/cutting paper.jpg";//random image is destroying stuff here so solve it
